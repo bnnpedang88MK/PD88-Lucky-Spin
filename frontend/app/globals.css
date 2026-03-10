@@ -1,0 +1,21 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Inter, Arial, sans-serif; background: #052e16; color: #e5ffe9; }
+.container { padding: 20px; display: flex; flex-direction: column; gap: 16px; }
+.header h1 { margin: 0; color: #86efac; }
+.grid { display: grid; gap: 14px; }
+.grid-6 { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+.grid-3 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.grid-2 { grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); }
+.card { background: #064e2a; border: 1px solid #166534; border-radius: 12px; padding: 14px; box-shadow: 0 8px 16px rgba(0,0,0,.25); }
+.card p { margin: 0; font-size: 12px; opacity: .8; }
+.card h3 { margin: 6px 0 0; }
+.filters { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr auto; gap: 10px; align-items: center; }
+input, select, button { width: 100%; background: #14532d; color: #dcfce7; border: 1px solid #22c55e; border-radius: 8px; padding: 9px; }
+button { cursor: pointer; }
+.state { padding: 14px; border-radius: 8px; background: #14532d; }
+.state.error { background: #7f1d1d; }
+.chart h3, .tableCard h3 { margin-top: 0; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { padding: 8px; border-bottom: 1px solid #166534; text-align: left; }
+.pagination { margin-top: 10px; display: flex; justify-content: space-between; align-items: center; }
+@media (max-width: 900px) { .filters { grid-template-columns: 1fr; } .grid-2 { grid-template-columns: 1fr; } }
